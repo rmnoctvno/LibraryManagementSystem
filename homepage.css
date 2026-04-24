@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: hwb(0 81% 19%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    padding-left: 5px;
+    padding-top: 20px;
+}
+.icon{
+    margin: 7px;
+    color:#ffffff;
+}
+.container-iconTitle{
+    text-decoration: none;
+    height: 70px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.menuText{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+#logoutButton{
+    height: 70px;
+    border-radius: 6px;
+    margin-top: 150px;
+}
+#logoutButton .icon{
+    height: 70px;
+    border-radius: 6px;
+    margin-top: 150px;
+}
+#logoutButton:hover{
+    background-color: white;
+}
+#logoutButton:hover .menuText{
+    color: #303F9F;
+}
+#logoutButton:hover .icon{
+    color: #303F9F;
+}
+.container-iconTitle:hover{
+    background-color: white;
+}
+.container-iconTitle:hover .menuText{
+    color: #303F9F;
+}
+.container-iconTitle:hover .icon{
+    color: #303F9F;
+}
+
+.libraryLogo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.profileLogo {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar {
+    background-color: #303F9F;
+}
+
+.navbar-brand img {
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+
+.sidebar {
+    background-color: #3F51B5;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 56px; /* Align with navbar height */
+    left: 0;
+    width: 20%;
+    float: left;
+}
+
+.main-content {
+    /* Ensure the content starts after the sidebar */
+    margin-left: 20%;
+    margin-top: 35px;
+    width: 80%;
+    height: 680px;
+    float: right;
+    background-color: hwb(0 81% 19%);
+}
+
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 1080px) {
+    .sidebar {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 200px;
+        padding: 20px;
+    }
+
+    .list-group-item {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar .navbar-toggler {
+        margin-left: auto;
+    }
+
+    .list-group-item {
+        text-align: center;
+    }
+}
